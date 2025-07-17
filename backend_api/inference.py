@@ -11,8 +11,11 @@ from binance.client import Client
 app = FastAPI()
 
 print("📦 Loading model & scaler...")
-MODEL_PATH = "btc_gru_model.h5"
-SCALER_PATH = "scaler.pkl"
+
+BASE_DIR = os.path.dirname(__file__)
+
+MODEL_PATH = os.path.join(BASE_DIR, "btc_gru_model.h5")
+SCALER_PATH = os.path.join(BASE_DIR, "scaler.pkl")
 
 model = tf.keras.models.load_model(MODEL_PATH, compile=False)
 scaler = joblib.load(SCALER_PATH)
