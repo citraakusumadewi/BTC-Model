@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #f5f7fa;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: background 0.3s ease;
+}
+
+body.dark {
+    background: #121212;
+    color: #eee;
+}
+
+.card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    text-align: center;
+    max-width: 850px;
+    width: 95%;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.dark .card {
+    background: #1e1e1e;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #333;
+}
+
+body.dark h1 {
+    color: #eee;
+}
+
+.timeframe {
+    margin: 15px 0;
+}
+
+.timeframe button {
+    background: #f5f7fa;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 0.95em;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.timeframe button:hover {
+    background: #e1e7ed;
+}
+
+.timeframe button.active {
+    background: #4a90e2;
+    color: white;
+}
+
+body.dark .timeframe button {
+    background: #1e1e1e;
+    color: #ccc;
+    border: 1px solid #333;
+}
+
+body.dark .timeframe button:hover {
+    background: #333;
+}
+
+body.dark .timeframe button.active {
+    background: #4a90e2;
+    color: white;
+}
+
+.price {
+    font-size: 3em;
+    margin: 20px 0;
+    color: #2c3e50;
+    transition: all 0.2s ease;
+}
+
+.price.up {
+    color: #27ae60;
+    transform: scale(1.05);
+}
+
+.price.down {
+    color: #c0392b;
+    transform: scale(0.95);
+}
+
+.time {
+    font-size: 0.95em;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+body.dark .price {
+    color: #eee;
+}
+
+body.dark .time {
+    color: #bbb;
+}
+
+canvas {
+    margin-top: 20px;
+}
+
+.dark-toggle {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #eee;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 0.9em;
+    transition: all 0.3s ease;
+}
+
+.dark-toggle:hover {
+    background: #ddd;
+}
+
+body.dark .dark-toggle {
+    background: #333;
+    color: #eee;
+}
+
+body.dark .dark-toggle:hover {
+    background: #444;
+}

@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+tensorflow
+numpy
+pandas
+scikit-learn
+joblib
+matplotlib
+python-binance
